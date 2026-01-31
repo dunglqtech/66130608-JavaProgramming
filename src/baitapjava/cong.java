@@ -8,10 +8,10 @@ public class cong {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Nhap so a: ");
-        int a = 3;
+        int a = sc.nextInt();
 
         System.out.print("Nhap so b: ");
-        int b = 5;
+        int b = sc.nextInt();
 
         int tong = a + b;
 
