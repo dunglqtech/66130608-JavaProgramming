@@ -20,6 +20,10 @@ public class hoanvi {
         System.out.println("Sau khi hoan vi:");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
+        int tich  = a * b;
+        System.out.println("tich cua a * b la:" + tich);
+        int thuong = a / b;
+        System.out.print("thuong cua a / b la: " + thuong);
 
         sc.close();
     }
