@@ -16,6 +16,6 @@ public class run {
              // Cap nhat gia tri rong sau khi thay doi dai
             cn1_dai = cn1.getDai();
             cn1_rong = cn1.getRong();
-            System.out.println("Sau khi thay doi, chu nhat cn1 co dai: " + cn1_daii + " va rong: " + cn1_rong);
+            System.out.println("Sau khi thay doi, chu nhat cn1 co dai: " + cn1_dai + " va rong: " + cn1_rong);
     }
 }
