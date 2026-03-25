@@ -3,11 +3,11 @@ public class run {
 
 	public static void main(String[] args) {
 		//Lớp nhân viên
-		NhanVien nv1 = new NhanVien("001", "Nguyễn Ngọc Luân", 250000);
+		NhanVien nv1 = new NhanVien("001", "Lê Quang Dũng", 250000);
 		//nv1.hienThongTin
 		System.out.println(nv1.toString());
 		
-		NhanVienVanPhong nvVanPhong1 = new NhanVienVanPhong(" 002", "Trần Thị Như Quy", 5000000, 10, 50000);
+		NhanVienVanPhong nvVanPhong1 = new NhanVienVanPhong(" 002", "Huỳnh Thu Thiên Trúc", 5000000, 10, 50000);
 		System.out.println(nvVanPhong1.toString());
 		
 		nvVanPhong1.hienThiThongTin();
