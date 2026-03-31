@@ -13,6 +13,15 @@ public class SinhVien {
 	
 	
 
+	public SinhVien(String tenHS, short tuoiHS, String lopHS) {
+		super();
+		this.tenHS = tenHS;
+		this.tuoiHS = tuoiHS;
+		this.lopHS = lopHS;
+	}
+
+
+
 	//getter va setter
 	public String getTenHS() {
 		return tenHS;
@@ -37,5 +46,13 @@ public class SinhVien {
 	public void setLopHS(String lopHS) {
 		this.lopHS = lopHS;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "SinhVien [tenHS=" + tenHS + ", tuoiHS=" + tuoiHS + ", lopHS=" + lopHS + "]";
+	}
+	
 	
 }
