@@ -1,3 +1,4 @@
+package quangdung;
 
 public class NhanVienVanPhong extends NhanVien {
 	private double soGioLamThem;
