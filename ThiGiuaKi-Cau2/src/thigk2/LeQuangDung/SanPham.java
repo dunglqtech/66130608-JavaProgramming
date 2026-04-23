@@ -46,6 +46,11 @@ public class SanPham {
 	public void setGia(double gia) {
 		this.gia = gia;
 	}
+
+	@Override
+	public String toString() {
+		return "SanPham [maSP=" + maSP + ", tenSP=" + tenSP + ", loaiSP=" + loaiSP + ", gia=" + gia + "]";
+	}
 	
 	
 }
