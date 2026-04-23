@@ -22,7 +22,47 @@ public class Run {
 		ArrayList<SanPham> ds = new ArrayList<>();
 		
 		//hard-code 3 san pham
+		SanPham sp1 = new SanPham();
+        sp1.setMaSP("SP01");
+        sp1.setTenSP("Sua");
+        sp1.setLoaiSP("Thuc pham");
+        sp1.setGia(10000);
+
+        SanPham sp2 = new SanPham();
+        sp2.setMaSP("SP02");
+        sp2.setTenSP("Thuoc");
+        sp2.setLoaiSP("Thuc pham chuc nang");
+        sp2.setGia(20000);
+
+        SanPham sp3 = new SanPham();
+        sp3.setMaSP("SP03");
+        sp3.setTenSP("Banh");
+        sp3.setLoaiSP("Thuc pham");
+        sp3.setGia(15000);
+
+        ds.add(sp1);
+        ds.add(sp2);
+        ds.add(sp3);
+        
+        //in danh sach
+        System.out.println("Danh sach ban dau:");
+		for (int i = 0; i < ds.size(); i++) {
+			System.out.println(ds.get(i));
+		}
 		
+		//nhap them sanpham moi
+		banphim.nextLine();
+		System.out.println("\nNhap san pham moi:");
+		SanPham spMoi = new SanPham();
+		System.out.print("Ma: ");
+		spMoi.setMaSP(banphim.nextLine());
+		System.out.print("Ten: ");
+		spMoi.setTenSP(banphim.nextLine());
+		System.out.print("Loai: ");
+		spMoi.setLoaiSP(banphim.nextLine());
+		System.out.print("Gia: ");
+		spMoi.setGia(banphim.nextDouble());
+		ds.add(spMoi);
 
 	}
 
