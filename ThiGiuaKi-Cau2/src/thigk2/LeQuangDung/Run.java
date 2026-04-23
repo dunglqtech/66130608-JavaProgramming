@@ -52,7 +52,7 @@ public class Run {
 		
 		//nhap them sanpham moi
 		banphim.nextLine();
-		System.out.println("\nNhap san pham moi:");
+		System.out.println("Nhap san pham moi:");
 		SanPham spMoi = new SanPham();
 		System.out.print("Ma: ");
 		spMoi.setMaSP(banphim.nextLine());
@@ -63,6 +63,20 @@ public class Run {
 		System.out.print("Gia: ");
 		spMoi.setGia(banphim.nextDouble());
 		ds.add(spMoi);
+		
+		//in lai danh sach
+		System.out.println("Danh sach sau khi them:");
+		for (int i = 0; i < ds.size(); i++) {
+			System.out.println(ds.get(i));
+		}
+		
+		//in ra san pham co loai la thuc pham chuc nang
+		System.out.println("San pham 'Thuc pham chuc nang':");
+		for (int i = 0; i < ds.size(); i++) {
+			if (ds.get(i).getLoaiSP().equalsIgnoreCase("Thuc pham chuc nang")) {
+				System.out.println(ds.get(i));
+			}
+		}
 
 	}
 
